@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
   }
 
+/* container of the navbar */
   .bottom-navbar {
     position: fixed;
     margin: 7.5%;
@@ -22,14 +23,37 @@ body {
     background: #4CAF50;
   }
 
+  /* individual svg sizing */
   .bottom-navbar svg {
     width: 24px;
     height: 24px;
   }
 
+  /* container around the svg's */
   .icons {
     display: inline-flex;
     align-items: center;
     gap: 34px;
-  }
+}
 
+/* container around the active svg, contains blurred and main svg */
+.svg-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* blurred svg behind main svg on active pages */
+.blurred-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(2px); 
+    opacity: 0.9; 
+    z-index: -1; 
+}
+
+/* main svg infront of blurred svg on active pages */
+.main-svg {
+    position: relative;
+    z-index: 1; 
+}
