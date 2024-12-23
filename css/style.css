@@ -24,36 +24,51 @@ body {
   }
 
   /* individual svg sizing */
-  .bottom-navbar svg {
+  .bottom-navbar .unactive-svg {
     width: 24px;
     height: 24px;
   }
 
   /* container around the svg's */
   .icons {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 34px;
 }
 
 /* container around the active svg, contains blurred and main svg */
-.svg-container {
-    position: relative;
-    display: inline-block;
-}
-
-/* blurred svg behind main svg on active pages */
+/* Blurred SVG behind main SVG */
 .blurred-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute; /* Makes it relative to the .svg-container */
+    top: 0; /* Aligns to the top of the container */
+    left: 0; /* Aligns to the left of the container */
     filter: blur(2px); 
     opacity: 0.9; 
-    z-index: -1; 
+    z-index: 1; /* Lower z-index to place behind .main-svg */
 }
 
-/* main svg infront of blurred svg on active pages */
+/* Main SVG in front of blurred SVG */
 .main-svg {
-    position: relative;
-    z-index: 1; 
+    position: relative; /* Default positioning */
+    z-index: 2; /* Higher z-index to place in front */
+}
+
+/* Container for alignment */
+.svg-container {
+    position: relative; /* Ensures positioning context for child SVGs */
+    width: 53px; /* Adjust as per SVG size */
+    height: 72px; /* Adjust as per SVG size */
+    display: inline-block; /* Aligns inline with other icons */
+    display: flex;
+    align-items: center;
+}
+
+.active-spotlight {
+    position: absolute; /* Absolute positioning for proper alignment */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 53px; /* Full width */
+    height: 71px; /* Full height */
+    z-index: 1; /* Place behind others */
 }
