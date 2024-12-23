@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .bottom-navbar {
+    position: fixed;
+    margin: 7.5%;
+    bottom: 0;
+    left: 0;
+    width: 323.631px;
+    height: 71.278px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 19px;
+    border: 1px solid #E0E0E0;
+    background: #4CAF50;
+  }
+
+  .bottom-navbar svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 34px;
+  }
+
