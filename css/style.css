@@ -96,7 +96,7 @@ body {
     /* spotlight around the active page's icon */
     .active-spotlight {
         position: absolute; 
-        width: 53px; 
+        width: 70px; 
         height: 71px; 
         z-index: 1; 
     }
@@ -127,6 +127,7 @@ header {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+  
 }
 
 /* theme switch between light and dark mode */
