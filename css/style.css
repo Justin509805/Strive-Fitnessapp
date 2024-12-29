@@ -2,7 +2,42 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--background-color);
   }
+
+  .darkmode {
+    --secondary-color-darkmode: #383838; /* secondary for dark mode */
+    --background-color-darkmode: #242424; /* secondary for dark mode */
+    --text-color-darkmode: #FFFFFF; /* darkmode text color */
+    --container-color-darkmode: #383838; /* border color lightmode*/
+    --border-color-darkmode: #5B5B5B; /* border color lightmode*/
+  }
+
+  :root {
+    /* color Palette */
+    --primary-color: #4CAF50; /* main green, same for light and dark mode */
+    --secondary-color: #A6D7A8; /* secondary for light mode */
+    --background-color: #F4F4F4; /* bg color for light mode */
+    --text-color: #000000; /* lightmode text color */
+    --container-color: #FFFFFF; /* border color lightmode*/
+    --border-color: #E0E0E0; /* border color lightmode*/
+
+    /* font Family */
+    --font-agrandir: 'PP Agrandir', sans-serif;
+    --font-monument: "PP Monument Extended", sans-serif;
+
+    /* border Radius */
+    --container-border-radius: 13px;
+    --navbar-border-radius: 13px;
+}
+
+.darkmode {
+  --secondary-color: #383838; /* secondary for dark mode */
+  --background-color: #242424; /* secondary for dark mode */
+  --text-color: #FFFFFF; /* darkmode text color */
+  --container-color: #383838; /* border color lightmode*/
+  --border-color: #5B5B5B; /* border color lightmode*/
+}
 
 /* navbar styling */
     /* container of the navbar */
@@ -13,15 +48,13 @@ body {
         left: 0;
         width: 323.631px;
         height: 71.278px;
-        background-color: #333;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         border-radius: 19px;
-        border: 1px solid #E0E0E0;
-        background: #4CAF50;
+        border: 1px solid var(--border-color);
+        background: var(--primary-color);
       }
 
       /* individual svg sizing */
@@ -71,10 +104,13 @@ body {
 /* header styling */
 header {
   margin: 0px 28.2px 0px 28.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .date-and-greeting .date {
-  color: #000;
+  color: var(--text-color);
   font-family: "PP Agrandir", sans-serif;
   font-size: 14px;
   font-weight: 100;
@@ -85,10 +121,19 @@ header {
 }
 
 .date-and-greeting .greeting {
-  color: #000;
+  color: var(--text-color);
   font-family: "PP Monument Extended";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+.light-dark-mode-switch svg {
+  margin-top: 14px;
+  width: 26px;
+  height: 26px;
+  padding: 11px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
