@@ -108,7 +108,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
+/* date styling */
 .date-and-greeting .date {
   color: var(--text-color);
   font-family: "PP Agrandir", sans-serif;
@@ -119,7 +119,7 @@ header {
   margin-bottom: 5px;
 
 }
-
+/* greeting styling */
 .date-and-greeting .greeting {
   color: var(--text-color);
   font-family: "PP Monument Extended";
@@ -129,11 +129,32 @@ header {
   margin: 0;
 }
 
-.light-dark-mode-switch svg {
-  margin-top: 14px;
-  width: 26px;
-  height: 26px;
-  padding: 11px;
+/* theme switch between light and dark mode */
+#theme-switch {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--primary-color);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: fixed;
+  top: 20px;
+  right: 28.2px;
+}
+
+/* sun svg */
+#theme-switch svg:last-child {
+  display: none;
+}
+/* moon svg */
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+/* sun svg when darkmode is enabled */
+.darkmode #theme-switch svg:last-child {
+  display: block;
 }

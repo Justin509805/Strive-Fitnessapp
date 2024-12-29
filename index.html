@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css"> 
     <title>Strive</title>
+    <script src="darkmode.js" defer></script>
 </head>
+<!-- "dark-mode" gets added and removed based on which theme is active-->
 <body class="darkmode">
-
+  <!-- "date-and-greeting is the container around the two with the "date"and "greeting" 
+   being the child elements with white text inside and underneath each other -->
     <header>
         <div class="date-and-greeting">
           <p class="date">Mon, Dec 9</p>
           <p class="greeting">Hi Justin</p>
         </div>
-        <div class="light-dark-mode-switch">
+        <!-- "theme-switch" is the green switch with one white icon displayed and the other not-->
+        <button id="theme-switch">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.9915 3.70062C10.798 4.8941 10.1276 6.5128 10.1276 8.20062C10.1276 9.88845 10.798 11.5071 11.9915 12.7006C13.185 13.8941 14.8037 14.5646 16.4915 14.5646C18.1793 14.5646 19.798 13.8941 20.9915 12.7006C20.9915 14.4807 20.4637 16.2207 19.4747 17.7008C18.4858 19.1808 17.0802 20.3344 15.4357 21.0155C13.7911 21.6967 11.9815 21.875 10.2357 21.5277C8.48988 21.1804 6.88623 20.3233 5.62756 19.0646C4.36889 17.8059 3.51172 16.2023 3.16445 14.4564C2.81719 12.7106 2.99542 10.901 3.6766 9.25647C4.35779 7.61194 5.51135 6.20633 6.99139 5.2174C8.47143 4.22846 10.2115 3.70062 11.9915 3.70062Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </div>
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9915 16.5476C14.2007 16.5476 15.9915 14.7567 15.9915 12.5476C15.9915 10.3385 14.2007 8.54761 11.9915 8.54761C9.78238 8.54761 7.99152 10.3385 7.99152 12.5476C7.99152 14.7567 9.78238 16.5476 11.9915 16.5476Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.9915 2.54761V4.54761" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.9915 20.5476V22.5476" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.92151 5.47766L6.33151 6.88766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.6515 18.2076L19.0615 19.6176" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.99152 12.5476H3.99152" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.9915 12.5476H21.9915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.33151 18.2076L4.92151 19.6176" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.0615 5.47766L17.6515 6.88766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </button>
     </header>
     
       <nav>
@@ -84,6 +100,6 @@
           </div>
     </nav>
 
-    <script src="main.js"></script> 
+ 
 </body>
 </html>
