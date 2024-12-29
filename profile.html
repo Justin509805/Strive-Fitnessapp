@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> 
+    <title>Strive</title>
+    <script src="darkmode.js" defer></script>
+</head>
+<!-- "dark-mode" gets added and removed based on which theme is active-->
+<body class="darkmode">
+  <!-- "date-and-greeting is the container around the two with the "date"and "greeting" 
+   being the child elements with white text inside and underneath each other -->
+   <!-- "greeting" is on index a greeting and on the other pages the title-->
+    <header>
+        <div class="date-and-greeting">
+          <p class="date">Mon, Dec 9</p>
+          <p class="greeting">Profile</p>
+        </div>
+        <!-- "theme-switch" is the green switch with one white icon displayed and the other not-->
+        <button id="theme-switch">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9915 3.70062C10.798 4.8941 10.1276 6.5128 10.1276 8.20062C10.1276 9.88845 10.798 11.5071 11.9915 12.7006C13.185 13.8941 14.8037 14.5646 16.4915 14.5646C18.1793 14.5646 19.798 13.8941 20.9915 12.7006C20.9915 14.4807 20.4637 16.2207 19.4747 17.7008C18.4858 19.1808 17.0802 20.3344 15.4357 21.0155C13.7911 21.6967 11.9815 21.875 10.2357 21.5277C8.48988 21.1804 6.88623 20.3233 5.62756 19.0646C4.36889 17.8059 3.51172 16.2023 3.16445 14.4564C2.81719 12.7106 2.99542 10.901 3.6766 9.25647C4.35779 7.61194 5.51135 6.20633 6.99139 5.2174C8.47143 4.22846 10.2115 3.70062 11.9915 3.70062Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9915 16.5476C14.2007 16.5476 15.9915 14.7567 15.9915 12.5476C15.9915 10.3385 14.2007 8.54761 11.9915 8.54761C9.78238 8.54761 7.99152 10.3385 7.99152 12.5476C7.99152 14.7567 9.78238 16.5476 11.9915 16.5476Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.9915 2.54761V4.54761" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.9915 20.5476V22.5476" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.92151 5.47766L6.33151 6.88766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.6515 18.2076L19.0615 19.6176" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.99152 12.5476H3.99152" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.9915 12.5476H21.9915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.33151 18.2076L4.92151 19.6176" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.0615 5.47766L17.6515 6.88766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </button>
+    </header>
+    
+      <nav>
+          <div class="bottom-navbar">  <!-- "bottom-navbar" = the container of the whole navbar-->
+            <div class="icons">  <!-- "icons" = around the icons within the navbar, inline-flex, gap 34px-->
+                <a href="index.html" class="active">
+                    <div class="svg-container">
+                      <!-- "active-spotlight" is the spotlight around the active page's icon -->
+                        <svg class="main-svg" class="unactive-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.4285 21.9862V13.9862C15.4285 13.721 15.3232 13.4666 15.1356 13.2791C14.9481 13.0916 14.6938 12.9862 14.4285 12.9862H10.4285C10.1633 12.9862 9.90897 13.0916 9.72144 13.2791C9.5339 13.4666 9.42854 13.721 9.42854 13.9862V21.9862" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.42854 10.9862C3.42847 10.6952 3.49188 10.4078 3.61433 10.1439C3.73678 9.87998 3.91534 9.64597 4.13754 9.45817L11.1375 3.45917C11.4985 3.15408 11.9559 2.98669 12.4285 2.98669C12.9012 2.98669 13.3586 3.15408 13.7195 3.45917L20.7195 9.45817C20.9417 9.64597 21.1203 9.87998 21.2428 10.1439C21.3652 10.4078 21.4286 10.6952 21.4285 10.9862V19.9862C21.4285 20.5166 21.2178 21.0253 20.8428 21.4004C20.4677 21.7755 19.959 21.9862 19.4285 21.9862H5.42854C4.89811 21.9862 4.3894 21.7755 4.01433 21.4004C3.63926 21.0253 3.42854 20.5166 3.42854 19.9862V10.9862Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="calorie-tracker.html">
+                    <div class="svg-container">
+                          <svg class="main-svg" class="unactive-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4285 21.9262C13.9285 21.9262 15.1785 22.9862 16.4285 22.9862C19.4285 22.9862 22.4285 14.9862 22.4285 10.7662C22.3945 9.47088 21.8498 8.24159 20.9132 7.34621C19.9766 6.45083 18.724 5.96196 17.4285 5.98616C15.2085 5.98616 13.4285 7.42616 12.4285 7.98616C11.4285 7.42616 9.64854 5.98616 7.42854 5.98616C6.13229 5.95932 4.87824 6.44731 3.94107 7.34324C3.0039 8.23917 2.46002 9.47001 2.42854 10.7662C2.42854 14.9862 5.42854 22.9862 8.42854 22.9862C9.67854 22.9862 10.9285 21.9262 12.4285 21.9262Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.4285 2.98621C11.4285 3.48621 12.4285 4.98621 12.4285 7.98621" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </div>
+                </a>
+                <a href="workout-tracker.html">
+                    <div class="svg-container">                     
+                    <svg class="main-svg" class="unactive-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_63_1258)">
+                          <path d="M14.8285 15.3862L10.0285 10.5862" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M19.0856 22.4712C18.7105 22.8464 18.2019 23.0572 17.6714 23.0573C17.141 23.0574 16.6322 22.8467 16.2571 22.4717C15.8819 22.0967 15.6711 21.588 15.671 21.0576C15.6709 20.5271 15.8815 20.0184 16.2566 19.6432L14.4896 21.4112C14.1144 21.7864 13.6056 21.9971 13.0751 21.9971C12.5445 21.9971 12.0357 21.7864 11.6606 21.4112C11.2854 21.0361 11.0746 20.5273 11.0746 19.9967C11.0746 19.4662 11.2854 18.9574 11.6606 18.5822L18.0246 12.2182C18.3997 11.8431 18.9085 11.6323 19.4391 11.6323C19.9696 11.6323 20.4784 11.8431 20.8535 12.2182C21.2287 12.5934 21.4395 13.1022 21.4395 13.6327C21.4395 14.1633 21.2287 14.6721 20.8535 15.0472L19.0856 16.8142C19.4607 16.4392 19.9695 16.2286 20.4999 16.2287C21.0304 16.2288 21.539 16.4396 21.9141 16.8147C22.2891 17.1899 22.4997 17.6986 22.4996 18.2291C22.4995 18.7595 22.2887 19.2682 21.9136 19.6432L19.0856 22.4712Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M21.9285 22.4862L20.5285 21.0862" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M4.32854 4.88621L2.92854 3.48621" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6.83255 13.7542C6.4574 14.1294 5.94859 14.3401 5.41805 14.3401C4.88751 14.3401 4.3787 14.1294 4.00355 13.7542C3.6284 13.3791 3.41764 12.8703 3.41764 12.3397C3.41764 11.8092 3.6284 11.3004 4.00355 10.9252L5.77155 9.15821C5.58579 9.3439 5.36528 9.49119 5.12261 9.59165C4.87993 9.69212 4.61985 9.74381 4.3572 9.74376C3.82675 9.74367 3.31807 9.53286 2.94305 9.15771C2.75736 8.97196 2.61008 8.75145 2.50961 8.50877C2.40914 8.2661 2.35745 8.00601 2.3575 7.74336C2.35759 7.21291 2.5684 6.70423 2.94355 6.32921L5.77155 3.50121C6.14657 3.12606 6.65525 2.91525 7.1857 2.91516C7.44835 2.91511 7.70843 2.9668 7.95111 3.06727C8.19379 3.16774 8.4143 3.31502 8.60005 3.50071C8.7858 3.6864 8.93317 3.90686 9.03372 4.1495C9.13428 4.39214 9.18605 4.65221 9.1861 4.91486C9.18615 5.17751 9.13446 5.4376 9.03399 5.68027C8.93352 5.92295 8.78624 6.14346 8.60055 6.32921L10.3675 4.56121C10.7427 4.18606 11.2515 3.97531 11.7821 3.97531C12.3126 3.97531 12.8214 4.18606 13.1965 4.56121C13.5717 4.93636 13.7825 5.44517 13.7825 5.97571C13.7825 6.50625 13.5717 7.01506 13.1965 7.39021L6.83255 13.7542Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_63_1258">
+                            <rect width="24" height="24" fill="white" transform="translate(0.428543 0.986206)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                </a>
+                <a href="weight-tracker.html">
+                    <div class="svg-container">
+                        <svg class="main-svg" class="unactive-svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.4285 11.9862H18.9485C18.5115 11.9853 18.0862 12.1275 17.7376 12.3912C17.3891 12.6548 17.1365 13.0254 17.0185 13.4462L14.6685 21.8062C14.6534 21.8581 14.6218 21.9038 14.5785 21.9362C14.5353 21.9687 14.4826 21.9862 14.4285 21.9862C14.3744 21.9862 14.3218 21.9687 14.2785 21.9362C14.2353 21.9038 14.2037 21.8581 14.1885 21.8062L8.66853 2.16621C8.65338 2.11428 8.6218 2.06866 8.57853 2.03621C8.53525 2.00375 8.48262 1.98621 8.42853 1.98621C8.37444 1.98621 8.3218 2.00375 8.27853 2.03621C8.23525 2.06866 8.20367 2.11428 8.18853 2.16621L5.83853 10.5262C5.72099 10.9454 5.46991 11.3147 5.12339 11.5782C4.77687 11.8417 4.35385 11.985 3.91853 11.9862H1.42853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </div>
+                </a>
+                <a href="profile.html">
+                    <div class="svg-container">
+                <!-- "active-spotlight" is the spotlight around the active page's icon -->
+                    <svg class="active-spotlight" width="43" height="71" viewBox="0 0 55 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8773 0.839111L0.427788 70.1329H52.9925L43.5071 0.839111H12.8773Z" fill="url(#paint0_linear_63_1243)"/>
+                        <rect x="5.70922" y="0.839111" width="44.7863" height="3.92169" fill="white"/>
+                        <defs>
+                          <linearGradient id="paint0_linear_63_1243" x1="26.7101" y1="0.839111" x2="26.7101" y2="60.9779" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#ADB5BD" stop-opacity="0.6"/>
+                            <stop offset="1" stop-color="#4CAF50"/>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <svg class="main-svg" class="unactive-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4285 13.9862C15.19 13.9862 17.4285 11.7476 17.4285 8.98621C17.4285 6.22478 15.19 3.98621 12.4285 3.98621C9.6671 3.98621 7.42853 6.22478 7.42853 8.98621C7.42853 11.7476 9.6671 13.9862 12.4285 13.9862Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.4285 21.9862C20.4285 19.8645 19.5857 17.8296 18.0854 16.3294C16.5851 14.8291 14.5503 13.9862 12.4285 13.9862C10.3068 13.9862 8.27196 14.8291 6.77167 16.3294C5.27138 17.8296 4.42853 19.8645 4.42853 21.9862" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                         <!-- the "blurred-svg" class and svg itself is only for the active page, this will be different dependant on the page -->
+                          <svg class="blurred-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_130_767)">
+                              <path d="M13 15C15.7614 15 18 12.7614 18 10C18 7.23858 15.7614 5 13 5C10.2386 5 8 7.23858 8 10C8 12.7614 10.2386 15 13 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M21 23C21 20.8783 20.1571 18.8434 18.6569 17.3431C17.1566 15.8429 15.1217 15 13 15C10.8783 15 8.84344 15.8429 7.34315 17.3431C5.84285 18.8434 5 20.8783 5 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <filter id="filter0_f_130_767" x="-3" y="-2" width="25" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_130_767"/>
+                              </filter>
+                            </defs>
+                          </svg>
+                    </div>
+                </a>
+            </div>
+          </div>
+    </nav>
+
+ 
+</body>
+</html>
