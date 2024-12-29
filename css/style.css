@@ -4,65 +4,91 @@ body {
     font-family: Arial, sans-serif;
   }
 
-/* container of the navbar */
-  .bottom-navbar {
-    position: fixed;
-    margin: 7.5%;
-    bottom: 0;
-    left: 0;
-    width: 323.631px;
-    height: 71.278px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    border-radius: 19px;
-    border: 1px solid #E0E0E0;
-    background: #4CAF50;
-  }
+/* navbar styling */
+    /* container of the navbar */
+      .bottom-navbar {
+        position: fixed;
+        margin: 7.5%;
+        bottom: 0;
+        left: 0;
+        width: 323.631px;
+        height: 71.278px;
+        background-color: #333;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        border-radius: 19px;
+        border: 1px solid #E0E0E0;
+        background: #4CAF50;
+      }
 
-  /* individual svg sizing */
-  .bottom-navbar .unactive-svg {
-    width: 24px;
-    height: 24px;
-  }
+      /* individual svg sizing */
+      .bottom-navbar .unactive-svg {
+        width: 24px;
+        height: 24px;
+      }
 
-  /* container around the svg's */
-  .icons {
-    display: flex;
-    align-items: center;
-    gap: 34px;
+      /* container around the svg's */
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+    }
+
+    /* container around the active svg, contains blurred and main svg */
+    .blurred-svg {
+        position: absolute; 
+        filter: blur(2px); 
+        opacity: 0.9; 
+        z-index: 1;
+    }
+
+    /* Main SVG in front of blurred SVG */
+    .main-svg {
+        position: relative; 
+        z-index: 2; 
+    }
+
+    /* Container for alignment */
+    .svg-container {
+        position: relative; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    /* spotlight around the active page's icon */
+    .active-spotlight {
+        position: absolute; 
+        width: 53px; 
+        height: 71px; 
+        z-index: 1; 
+    }
+
+/* header styling */
+header {
+  margin: 0px 28.2px 0px 28.2px;
 }
 
-/* container around the active svg, contains blurred and main svg */
-.blurred-svg {
-    position: absolute; 
-    filter: blur(2px); 
-    opacity: 0.9; 
-    z-index: 1;
+.date-and-greeting .date {
+  color: #000;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.1em; 
+  line-height: 1.5;
+  margin-bottom: 5px;
+
 }
 
-/* Main SVG in front of blurred SVG */
-.main-svg {
-    position: relative; 
-    z-index: 2; 
-}
-
-/* Container for alignment */
-.svg-container {
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
-
-/* spotlight around the active page's icon */
-.active-spotlight {
-    position: absolute; 
-    width: 53px; 
-    height: 71px; 
-    z-index: 1; 
+.date-and-greeting .greeting {
+  color: #000;
+  font-family: "PP Monument Extended";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
 }
