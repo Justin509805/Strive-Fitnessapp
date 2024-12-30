@@ -107,7 +107,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 /* date styling */
 .date-and-greeting .date {
@@ -118,6 +118,7 @@ header {
   letter-spacing: 0.1em; 
   line-height: 1.5;
   margin-bottom: 5px;
+  transform: scaleY(0.8);
 
 }
 /* greeting styling */
@@ -128,6 +129,7 @@ header {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+  transform: scaleY(1.2);
   
 }
 
@@ -145,7 +147,7 @@ header {
   position: fixed;
   top: 20px;
   right: 28.2px;
-  margin-top: 40px;
+  margin-top: 30px;
 
 }
 
@@ -169,7 +171,6 @@ header {
   margin-top: 40px;
   color: var(--text-color);
   font-family: "PP Agrandir";
-  letter-spacing: 0.1em;
   font-size: 14px;
   font-style: normal;
   font-weight: lighter;
@@ -178,21 +179,76 @@ header {
 
 .square-container {
   width: 150px;
-  height: 155.542px;
+  height: 165px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
 }
 
+.long-container {
+  margin-top: 10px;
+  width: 315px;
+  height: 165px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+}
+
+.big-container {
+  width: 150px;
+  height: 243px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+}
+
+.containers-right .square-container {
+  width: 150px;
+  height: 160px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+  margin-top: 18px;
+}
+
+.small-container {
+  width: 150px;
+  height: 88px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+
+}
+
 .square-container .data {
   width: 135px;
-  height: 110px;
+  height: 115px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+.long-container .data {
+  width: 300px;
+  height: 115px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+.big-container .data {
+  width: 135px;
+  height: 193px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+
+.small-container .data {
+  width: 135px;
   margin-left: 7px;
   background-color: var(--primary-color);
   border-radius: var(--container-border-radius);
 }
 
 .icon-and-title {
-  margin: 6px 0px 6px 8px;
+  margin: 8px 0px 8px 10px;
   display: flex;
   align-items: center;
   color: var(--text-color)
@@ -205,16 +261,45 @@ header {
 .icon-and-title p {
   font-family: "PP Agrandir";
   margin: 0px 0px 0px 5px;
-  letter-spacing: 0.1em;
+  transform: scaleY(0.8);
+  font-size: 20px;
+  font-weight: 100;
 }
 
-.graph {
+.square-container .graph {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80px;
   gap: 4px;
   margin: 6px 0px 0px 0px
+}
+
+.square-container .graph-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80px;
+  gap: 4px;
+  margin: 6px 0px 5px 0px
+}
+
+.graph-steps svg {
+  margin-bottom: 11px;
+  transform: scaleY(1.2);
+}
+
+.long-container .graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  gap: 4px;
+  margin: 6px 0px 0px 0px
+}
+
+.small-container .graph {
+  margin: 6px 0px 3px 6px
 }
 
 .dotted-line p {
@@ -227,6 +312,17 @@ header {
   margin-bottom: 40px;
 }
 
+.dotted-line-steps p {
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+
 .data .number p {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -237,15 +333,48 @@ header {
   margin: 0px 0px 10px 12px;
 }
 
+.data .number-steps p {
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 0px 4px 10px;
+}
+
+
+.small-container .data .number p {
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 0px 3px 5px;
+}
+
 .data {
   display: flex;
   flex-direction: column;
 }
 
 .containers-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 40vw;
+}
+
+.containers-right {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-columns: 1fr;
   grid-column-gap: 8px;
   grid-row-gap: 10px; 
+  width: 40vw;
+}
+
+.flex-container {
+  display: flex;
+  gap: 15px;
 }
