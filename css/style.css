@@ -394,6 +394,7 @@ header {
   position: relative;
   width: 100px;
   height: auto;
+  margin-top: 10px;;
 }
 
 .circle {
@@ -426,7 +427,7 @@ header {
 
 .number {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: white;
   font-family: "PP Monument Extended";
   font-size: 15px;
   font-style: normal;
@@ -442,3 +443,45 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+
+.macros {
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  width: 120px;
+}
+
+.macro-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 5px 0;
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.macro-item div {
+  display: flex;
+  gap: 2px; 
+}
+
+#max-carbs,#max-fat,#max-protein, #carbs, #fat, #protein {
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+  #max-carbs,#max-fat,#max-protein {
+    font-size: 10px;
+  }
+
+  #carbs {
+    margin-left: 5px;
+  }
