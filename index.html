@@ -231,27 +231,28 @@
         </div>
         <div class="data"> 
           <div class="line-graph-container">
-            <svg width="262" height="51" viewBox="0 0 262 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.56708 42.1416C6.06848 38.5325 10.4569 35.8265 17.744 42.1416C37.5869 59.3376 43.6506 34.4384 55.4356 42.1416C81.2083 58.9877 89.3332 4.83216 111.664 25.264C154.79 64.7223 175.576 -7.57155 222.885 10.6155C243.953 18.7147 243.005 3.29126 259.379 3.29126" stroke="white" stroke-width="5.09211" stroke-linecap="round"/>
+            <svg class="line-graph" viewBox="0 0 500 200" preserveAspectRatio="none">
+                <g class="grid-lines">
+                    <!-- Vertical grid lines -->
+                    <line x1="0" y1="50" x2="500" y2="50"></line>
+                    <line x1="0" y1="100" x2="500" y2="100"></line>
+                    <line x1="0" y1="150" x2="500" y2="150"></line>
+                </g>
+                <g class="graph">
+                    <!-- The dynamic path for the graph line -->
+                    <path d="" class="graph-line"></path>
+                    <!-- The dynamic circles for data points -->
+                    <g class="graph-points"></g>
+                </g>
+                <!-- Y-axis labels -->
+                <g class="labels">
+                    <text x="10" y="54">80</text>
+                    <text x="10" y="104">75</text>
+                    <text x="10" y="154">70</text>
+                </g>
             </svg>
-          </div>
-          <svg class="dot" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_63_1358)">
-              <circle cx="3.81908" cy="3.81908" r="5.72862" transform="matrix(-1 0 0 1 14.1985 4.32898)" fill="#4CAF50" stroke="white" stroke-width="3.81908"/>
-            </g>
-            <defs>
-              <filter id="filter0_d_63_1358" x="0.195158" y="0.509888" width="20.3684" height="20.3685" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dy="2.54605"/>
-                <feGaussianBlur stdDeviation="1.27303"/>
-                <feComposite in2="hardAlpha" operator="out"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_63_1358"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_63_1358" result="shape"/>
-              </filter>
-            </defs>
-          </svg>   
+        </div>
+        
       </div>
 
       <nav>
