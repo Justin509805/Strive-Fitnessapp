@@ -473,10 +473,6 @@ header {
     font-size: 10px;
   }
 
-  #carbs {
-    margin-left: 5px;
-  }
-
   .line-graph-container {
     display: flex;
     justify-content: center;
@@ -571,9 +567,6 @@ header {
   line-height: normal;
 }
 
-.huge-container .cal-left{
-  margin-top: 25px;
-}
 
 .huge-container .cal-left p {
   margin: 0px;
@@ -585,9 +578,15 @@ header {
 
 .cal-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
+.cal-container .radial-graph{
+  position: relative;
+  width: 100px;
+  height: auto;
+}
 
 .cal-burnt-container {
   display: flex;
@@ -614,4 +613,41 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.eaten-hr {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 0px 0px 17px;
+}
+
+.eaten-hr p {
+  margin-right: 10px;
+}
+
+.eaten-hr .hr {
+  height: 1px;
+  width: 210px;
+  background-color: #FFF;
+  border-radius: 12px;
+  opacity: 0.5;
+}
+
+.huge-container .macros {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.huge-container .macros-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
 }
