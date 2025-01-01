@@ -70,17 +70,18 @@
         <div class="cal-container">
           <div class="cal-left-container">
             <div class="cal-left">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.7798 17.7155C14.7063 17.7155 15.4783 18.3702 16.2504 18.3702C18.1033 18.3702 19.9562 13.4291 19.9562 10.8227C19.9352 10.0227 19.5987 9.26344 19.0203 8.71042C18.4418 8.1574 17.6682 7.85545 16.868 7.8704C15.4969 7.8704 14.3975 8.7598 13.7798 9.10568C13.1622 8.7598 12.0628 7.8704 10.6916 7.8704C9.89103 7.85382 9.11648 8.15522 8.53765 8.70859C7.95882 9.26195 7.62289 10.0222 7.60345 10.8227C7.60345 13.4291 9.45637 18.3702 11.3093 18.3702C12.0813 18.3702 12.8534 17.7155 13.7798 17.7155Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12.5446 6.01746C13.1622 6.32627 13.7798 7.25273 13.7798 9.10564" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <p>Left</p>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7798 17.7155C14.7063 17.7155 15.4783 18.3702 16.2504 18.3702C18.1033 18.3702 19.9562 13.4291 19.9562 10.8227C19.9352 10.0227 19.5987 9.26344 19.0203 8.71042C18.4418 8.1574 17.6682 7.85545 16.868 7.8704C15.4969 7.8704 14.3975 8.7598 13.7798 9.10568C13.1622 8.7598 12.0628 7.8704 10.6916 7.8704C9.89103 7.85382 9.11648 8.15522 8.53765 8.70859C7.95882 9.26195 7.62289 10.0222 7.60345 10.8227C7.60345 13.4291 9.45637 18.3702 11.3093 18.3702C12.0813 18.3702 12.8534 17.7155 13.7798 17.7155Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.5446 6.01746C13.1622 6.32627 13.7798 7.25273 13.7798 9.10564" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Left</p>
             </div>
             <div class="cal-left-number">
-              <div id="remaining-calories"></div>
-              <div class="unit">KCAL</div>
+                <div id="remaining-calories">10</div>
+                <div class="unit">KCAL</div>
             </div>
-          </div>
+        </div>
+        
             <div class="radial-graph">
               <svg class="circle" viewBox="0 0 36 36">
                   <path class="circle-bg"
@@ -111,8 +112,28 @@
               </div>
             </div>
           </div>
-          
         </div>
+
+        <div class="macros">
+          <div class="macro-item">
+              Carbs
+              <div>
+                  <span id="carbs">0</span> / <span id="max-carbs">0</span>g
+              </div>
+          </div>
+          <div class="macro-item">
+              Protein
+              <div>
+                  <span id="protein">0</span> / <span id="max-protein">0</span>g
+              </div>
+          </div>
+          <div class="macro-item">
+              Fat
+              <div>
+                  <span id="fat">0</span> / <span id="max-fat">0</span>g
+              </div>
+          </div>
+      </div>
     </div>
     
       <nav>

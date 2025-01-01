@@ -588,8 +588,30 @@ header {
   justify-content: space-evenly;
 }
 
-.cal-left-container, .cal-burnt-container {
+
+.cal-burnt-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cal-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cal-left-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#percentage-number, #remaining-calories {
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

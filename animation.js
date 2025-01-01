@@ -46,22 +46,24 @@ function updateRadialGraph(current, total) {
   
     // Update the percentage number (change it dynamically)
     const percentageNumber = document.getElementById('percentage-number');
-    const burntCalories = (current * total) / 100;  // Burnt calories based on percentage
-    percentageNumber.textContent = burntCalories.toFixed(1);  // Update with 1 decimal place
+    const burntCalories = current * 0.12;  // Burnt calories based on the new formula
+    percentageNumber.textContent = burntCalories.toFixed(0);  // Update with 1 decimal place
+
   
     // Call the updateRemainingCalories function to update remaining calories
     updateRemainingCalories(current, total);
-  }
+}
   
-  // New function to calculate remaining calories and update the display
-  function updateRemainingCalories(current, total) {
+// New function to calculate remaining calories and update the display
+function updateRemainingCalories(current, total) {
     const remainingCalories = total - current; // Calculate remaining calories
     const remainingCaloriesElement = document.getElementById('remaining-calories');
     remainingCaloriesElement.textContent = remainingCalories; // Update the remaining calories
-  }
+}
   
-  // Example usage: update with current = 985, total = 2000
-  updateRadialGraph(1000, 2000);
+// Example usage: update with current = 1000, total = 2000
+updateRadialGraph(1500, 2000);
+
   
   
 
