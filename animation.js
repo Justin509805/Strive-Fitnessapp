@@ -62,9 +62,8 @@ function updateRemainingCalories(current, total) {
 }
   
 // Example usage: update with current = 1000, total = 2000
-updateRadialGraph(1500, 2000);
+updateRadialGraph(1800, 2500);
 
-  
   
 
 
