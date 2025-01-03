@@ -696,16 +696,39 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+.breakfast .title {
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.breakfast .chevron {
+  margin-left: 100px;
+}
+
 .kcal-calories {
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 
-.kcal-calories p {
+.kcal-calories .calories {
   margin: 0px;
   color: #FFF;
   font-family: "PP Monument Extended";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kcal-calories .kcal {
+  color: rgba(255, 253, 253, 0.51);
+  font-family: "PP Monument Extended";
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
