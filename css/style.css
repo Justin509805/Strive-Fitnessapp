@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'PP Agrandir';
+  src: url('/fonts/PPAgrandir-WideLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url('/fonts/PPMonumentExtended-Regular.ttf') format('ttf');  
+}
+
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-color: var(--background-color);
     margin: 0px 28.2px 0px 28.2px;
   }
@@ -24,8 +34,8 @@ body {
     --border-color: #E0E0E0; /* border color lightmode*/
 
     /* font Family */
-    --font-agrandir: 'PP Agrandir', sans-serif;
-    --font-monument: "PP Monument Extended", sans-serif;
+    --font-agrandir: 'PP Agrandir';
+    --font-monument: "PP Monument Extended";
 
     /* border Radius */
     --container-border-radius: 13px;
@@ -112,7 +122,7 @@ header {
 /* date styling */
 .date-and-greeting .date {
   color: var(--text-color);
-  font-family: "PP Agrandir", sans-serif;
+  font-family: var(--font-agrandir);
   font-size: 14px;
   font-weight: 100;
   letter-spacing: 0.1em; 
@@ -124,7 +134,7 @@ header {
 /* greeting styling */
 .date-and-greeting .greeting {
   color: var(--text-color);
-  font-family: "PP Monument Extended";
+  font-family: var(--font-monument);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
