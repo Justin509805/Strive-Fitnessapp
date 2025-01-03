@@ -689,53 +689,8 @@ header {
   margin-top: 5px;
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  z-index: 1000;
-}
-
-.popup-content {
-  text-align: center;
-}
-
-#close-popup {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #7E7E7E;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#close-popup:hover {
-  background-color: #5A5A5A;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
-
-.popup.show, .overlay.show {
-  display: block;
-}
-
 .breakfast-lunch-dinner {
+  color: #FFF;
   margin-top: 10px;
   width: 319px;
   height: 210px;
@@ -750,9 +705,39 @@ header {
 
 .kcal-calories p {
   margin: 0px;
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.eating p {
+.breakfast p {
   margin: 0px;
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
+.breakfast svg {
+  margin-right: 10px;
+}
+
+.breakfast {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px 8px 25px;
+}
+
+.breakfast-lunch-dinner .hr {
+  height: 1px;
+  width: 255px;
+  background-color: #FFF;
+  border-radius: 12px;
+  opacity: 0.5;
+  margin: 0px 15px 0px 30px;
+}
