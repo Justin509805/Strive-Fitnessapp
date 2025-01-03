@@ -648,7 +648,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0px 0px 0px 17px;
+  margin: 0px 0px 13px 17px;
 }
 
 .eaten-hr p {
@@ -671,9 +671,8 @@ header {
 
 .huge-container .macros-parent .macro-item {
   display: flex;
-  justify-content: space-around; 
   align-items: center;
-  margin: 7px 0;
+  margin: 0px 20px 15px 18px;
   color: #FFF;
   font-family: "PP Agrandir";
   font-size: 14px;
