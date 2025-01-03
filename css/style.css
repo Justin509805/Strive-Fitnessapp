@@ -781,7 +781,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 324px;
+  width: 310px;
   height: 41.232px;
   border-radius: 13px;
   background: #4CAF50;
@@ -811,18 +811,35 @@ header {
 }
 
 .content-section {
-  width: 80%;
-  max-width: 600px;
+  width: 295px;
+  max-height: 500px;
+  flex-shrink: 0;
   margin: 20px auto;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: var(--container-border-radius);
   background-color: white;
 }
 
 .content-title {
+  color: var(--text-color);
+  font-family: var(--font-monument);
   font-size: 18px;
-  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.content-table h3 {
+  color: var(--text-color);
+  font-family: "PP Agrandir";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100px;
 }
 
 .content-table {
@@ -830,8 +847,16 @@ header {
   border-collapse: collapse;
 }
 
-.content-table th, .content-table td {
+
+.content-table td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
+  color: var(--text-color);
+  font-family: "PP Monument Extended";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: scaleY(1.1);
 }
