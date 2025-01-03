@@ -761,3 +761,77 @@ header {
   opacity: 0.5;
   margin: 0px 15px 0px 30px;
 }
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* -----------------workout tracker-------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 324px;
+  height: 41.232px;
+  border-radius: 13px;
+  background: #4CAF50;
+  flex-shrink: 0;
+  padding: 0 5px; /* Add a little padding for spacing */
+}
+
+.day-button {
+  flex: 1;
+  height: 100%;
+  margin: 0 2px; /* Small spacing between buttons */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners for buttons */
+  background: #4CAF50;
+  color: #FFF;
+  font-family: "PP Monument Extended", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+}
+
+.day-button:hover {
+  background: #45a049;
+}
+
+.content-section {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.content-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-table th, .content-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
