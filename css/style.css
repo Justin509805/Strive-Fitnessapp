@@ -857,13 +857,6 @@ header {
   border-spacing: 0; 
 }
 
-.content-table tbody {
-  background-color: var(--primary-color);
-  border-radius: 13px; 
-  overflow: hidden;
-}
-
-
 .content-table tbody tr:first-child td:first-child {
   border-top-left-radius: 10px;
 }
