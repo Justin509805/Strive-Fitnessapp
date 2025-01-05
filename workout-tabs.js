@@ -56,7 +56,196 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         ]
       },
-      // Add similar data for other days as needed
+      wednesday: {
+        title: "Wednesday's Workout",
+        tables: [
+          {
+            title: "Incline Machine Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Incline Barbell Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
+            ]
+          },
+          {
+            title: "Peck Deck Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
+            ]
+          }
+        ]
+      },
+      thursday: {
+        title: "Thursday's Workout",
+        tables: [
+          {
+            title: "Incline Machine Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Incline Barbell Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
+            ]
+          },
+          {
+            title: "Peck Deck Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
+            ]
+          }
+        ]
+      },
+      friday: {
+        title: "Friday's Workout",
+        tables: [
+          {
+            title: "Incline Machine Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Incline Barbell Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
+            ]
+          },
+          {
+            title: "Peck Deck Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
+            ]
+          }
+        ]
+      },
+      saterday: {
+        title: "Saterday's Workout",
+        tables: [
+          {
+            title: "Incline Machine Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Incline Barbell Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
+            ]
+          },
+          {
+            title: "Peck Deck Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
+            ]
+          }
+        ]
+      },
+      sunday: {
+        title: "Sundays's Workout",
+        tables: [
+          {
+            title: "Incline Machine Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Incline Barbell Press",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
+            ]
+          },
+          {
+            title: "Peck Deck Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
+            ]
+          }
+        ]
+      },
     };
   
     dayButtons.forEach(button => {
