@@ -46,7 +46,7 @@ function updateRadialGraph(current, total) {
   
     // Update the percentage number (change it dynamically)
     const percentageNumber = document.getElementById('percentage-number');
-    const burntCalories = current * 0.12;  // Burnt calories based on the new formula
+    const burntCalories = current * 0.07;  // Burnt calories based on the new formula
     percentageNumber.textContent = burntCalories.toFixed(0);  // Update with 1 decimal place
 
   
@@ -62,7 +62,7 @@ function updateRemainingCalories(current, total) {
 }
   
 // Example usage: update with current = 1000, total = 2000
-updateRadialGraph(1800, 2500);
+updateRadialGraph(422, 2300);
 
   
 
