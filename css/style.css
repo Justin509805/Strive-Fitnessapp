@@ -832,10 +832,8 @@ header {
   border-radius: 10px; 
   overflow-y: auto;
   flex-grow: 1; 
-  overflow-y: auto; 
   margin-top: 10px; 
 }
-
 
 .content-title {
   color: var(--text-color);
@@ -860,8 +858,13 @@ header {
 
 .content-table {
   width: 100%;
-  border-collapse: seperate; 
+  border-collapse: separate;
   border-spacing: 0; 
+}
+
+.content-table tbody {
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
 .content-table tbody tr:first-child td:first-child {
@@ -880,10 +883,9 @@ header {
   border-bottom-right-radius: 10px; 
 }
 
-/* Custom background color for specific rows */
-.content-table tbody tr:nth-child(3),
-.content-table tbody tr:nth-child(5) {
-  background: var(--primary-color); 
+.content-table tbody tr:nth-child(3) td,
+.content-table tbody tr:nth-child(5) td {
+  background-color: var(--primary-color);
   color: white; 
 }
 
@@ -897,15 +899,12 @@ header {
   color: white;
 }
 
-
-
-.content-table tbody tr:nth-child(2),
-.content-table tbody tr:nth-child(4),
-.content-table tbody tr:nth-child(6) {
+.content-table tbody tr:nth-child(2) td,
+.content-table tbody tr:nth-child(4) td,
+.content-table tbody tr:nth-child(6) td {
   background: var(--secondary-color); 
   color: white; 
 }
-
 
 .content-table th,
 .content-table td {
@@ -913,10 +912,10 @@ header {
   padding: 8px;
   color: white !important;
   text-align: center;
-  color: var(--text-color);
   font-family: "PP Monument Extended";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
