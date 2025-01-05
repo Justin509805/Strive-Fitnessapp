@@ -819,10 +819,16 @@ header {
   flex-shrink: 0;
   margin: 20px auto;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: var(--container-border-radius);
-  background-color: white;
+  background-color: var(--container-color);
 }
+
+.content-table-wrapper {
+  overflow: hidden; 
+  border-radius: 10px; 
+}
+
 
 .content-title {
   color: var(--text-color);
@@ -832,7 +838,7 @@ header {
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  margin-bottom: 0px;
+  margin: 4px;
 }
 
 .content-table h3 {
@@ -842,18 +848,70 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 100px;
+  width: 450%;
 }
 
 .content-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: seperate; 
+  border-spacing: 0; 
+}
+
+.content-table tbody {
+  background-color: var(--primary-color);
+  border-radius: 13px; 
+  overflow: hidden;
 }
 
 
+.content-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.content-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.content-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px; 
+}
+
+.content-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px; 
+}
+
+/* Custom background color for specific rows */
+.content-table tbody tr:nth-child(3),
+.content-table tbody tr:nth-child(5) {
+  background: var(--primary-color); 
+  color: white; 
+}
+
+.content-table tbody tr:first-child td {
+  font-family: "PP Agrandir";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: var(--primary-color); 
+  color: white;
+}
+
+
+
+.content-table tbody tr:nth-child(2),
+.content-table tbody tr:nth-child(4),
+.content-table tbody tr:nth-child(6) {
+  background: var(--secondary-color); 
+  color: white; 
+}
+
+
+.content-table th,
 .content-table td {
   border: 1px solid #ccc;
   padding: 8px;
+  color: white !important;
   text-align: center;
   color: var(--text-color);
   font-family: "PP Monument Extended";
@@ -861,5 +919,4 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  transform: scaleY(1.1);
 }
