@@ -789,15 +789,15 @@ header {
   border-radius: 13px;
   background: #4CAF50;
   flex-shrink: 0;
-  padding: 0 5px; /* Add a little padding for spacing */
+  padding: 0 5px; 
 }
 
 .day-button {
   flex: 1;
   height: 100%;
-  margin: 0 2px; /* Small spacing between buttons */
+  margin: 0 2px; 
   border: none;
-  border-radius: 5px; /* Slightly rounded corners for buttons */
+  border-radius: 5px; 
   background: #4CAF50;
   color: #FFF;
   font-family: "PP Monument Extended", sans-serif;
@@ -822,11 +822,18 @@ header {
   border: 1px solid var(--border-color);
   border-radius: var(--container-border-radius);
   background-color: var(--container-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
 }
 
 .content-table-wrapper {
   overflow: hidden; 
   border-radius: 10px; 
+  overflow-y: auto;
+  flex-grow: 1; 
+  overflow-y: auto; 
+  margin-top: 10px; 
 }
 
 

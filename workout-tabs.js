@@ -23,6 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
               ["1", "20", "12", "10-15"],
               ["2", "25", "10", "10-15"]
             ]
+          },
+          {
+            title: "Chest Fly",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "20", "12", "10-15"],
+              ["2", "25", "10", "10-15"]
+            ]
           }
         ]
       },
