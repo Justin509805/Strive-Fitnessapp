@@ -9,27 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
         title: "Monday's Workout",
         tables: [
           {
-            title: "Bench Press",
+            title: "Incline Machine Press",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "50", "10", "8-12"],
-              ["2", "55", "8", "8-12"]
+              ["1", "59", "7", "6-10"],
+              ["2", "59", "7", "6-10"],
             ]
           },
           {
-            title: "Chest Fly",
+            title: "Incline Barbell Press",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "20", "12", "10-15"],
-              ["2", "25", "10", "10-15"]
+              ["1", "50", "7", "6-10"],
+              ["2", "50", "9", "6-10"]
             ]
           },
           {
-            title: "Chest Fly",
+            title: "Peck Deck Fly",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "20", "12", "10-15"],
-              ["2", "25", "10", "10-15"]
+              ["1", "68", "10", "10-15"],
+              ["2", "68", "10", "10-15"]
+            ]
+          },
+          {
+            title: "Incline Dumbell Curl",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "18", "15", "10-15"],
+              ["2", "18", "11", "10-15"],
+              ["3", "18", "11", "10-15"]
             ]
           }
         ]
