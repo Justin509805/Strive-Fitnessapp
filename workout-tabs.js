@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       sunday: {
-        title: "Sunday's my first restday",
+        title: "Sunday's my second restday",
         tables: [
           {
             title: "",
