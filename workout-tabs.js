@@ -1,9 +1,12 @@
+// ensures that the js only starts after the entire HTML file is loaded, avoids errors
 document.addEventListener('DOMContentLoaded', () => {
+
+  // selects all of the nessecary classes
     const dayButtons = document.querySelectorAll('.day-button');
     const contentTitle = document.querySelector('.content-title');
     const contentTable = document.querySelector('.content-table');
   
-    // Data for each day
+    // stores the data of each day consiting of title, tables
     const dayData = {
       monday: {
         title: "Monday's Workout",
@@ -248,15 +251,19 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     };
   
+    // adds eventlistener click to each day button so M T W T F S S
     dayButtons.forEach(button => {
       button.addEventListener('click', () => {
+        // day gets the value from which day button is clicked so when M is clicked it will get the value of monday
+        // data retrieves the data that is connected with the day
         const day = button.getAttribute('data-day');
         const data = dayData[day];
   
-        // Update the title
+        // updates the title to the right one like Monday's Workout
         contentTitle.textContent = data.title;
   
-        // Clear and populate tables
+        // clears the current content
+        // data.tables loops trough each workout section and displays the right table
         contentTable.innerHTML = data.tables
           .map(tableData => {
             const tableRows = tableData.table
