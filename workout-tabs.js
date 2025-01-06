@@ -43,58 +43,120 @@ document.addEventListener('DOMContentLoaded', () => {
               ["2", "18", "11", "10-15"],
               ["3", "18", "11", "10-15"]
             ]
-          }
+          },
+          {
+            title: "Cuffed Single Arm Hammer Curls",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "15", "13", "10-15"],
+              ["2", "15", "12", "10-15"],
+              ["3", "15", "13", "10-15"]
+            ]
+          },
+          {
+            title: "Leaning Lateral Raises",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "7", "18", "15-20"],
+              ["2", "7", "18", "15-20"],
+              ["3", "7", "17", "15-20"]
+            ]
+          },
         ]
       },
       tuesday: {
         title: "Tuesday's Schedule",
         tables: [
           {
-            title: "Workout 1",
+            title: "Lat Pulldown (Neutral)",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "10", "15", "12-20"],
-              ["2", "15", "12", "12-20"]
+              ["1", "85", "8", "6-10"],
+              ["2", "85", "7", "6-10"],
             ]
-          }
+          },
+          {
+            title: "Rope Pullovers",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "30", "10", "6-10"],
+              ["2", "30", "9", "6-10"],
+            ]
+          },
+          {
+            title: "Barbell Rows",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "60", "14", "10-15"],
+              ["2", "60", "13", "10-15"],
+            ]
+          },
+          {
+            title: "Cable Overhead Extensions",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "25", "12", "10-15"],
+              ["2", "25", "9", "10-15"],
+              ["3", "25", "10", "10-15"],
+            ]
+          },
+          {
+            title: "Carter Extensions",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "15", "10", "10-15"],
+              ["2", "15", "10", "10-15"],
+              ["3", "15", "9", "10-15"],
+            ]
+          },
         ]
       },
       wednesday: {
         title: "Wednesday's Workout",
         tables: [
           {
-            title: "Incline Machine Press",
+            title: "DB Shoulder Press",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "59", "7", "6-10"],
-              ["2", "59", "7", "6-10"],
+              ["1", "26", "8", "6-10"],
+              ["2", "26", "7", "6-10"],
             ]
           },
           {
-            title: "Incline Barbell Press",
+            title: "Leaning Lateral Raises",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "50", "7", "6-10"],
-              ["2", "50", "9", "6-10"]
+              ["1", "7", "18", "15-20"],
+              ["2", "7", "18", "15-20"],
+              ["3", "7", "17", "15-20"]
             ]
           },
           {
-            title: "Peck Deck Fly",
+            title: "RDF Machine",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "68", "10", "10-15"],
-              ["2", "68", "10", "10-15"]
+              ["1", "64", "14", "6-15"],
+              ["2", "64", "13", "6-15"]
             ]
           },
           {
-            title: "Incline Dumbell Curl",
+            title: "Cable Crunches",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "18", "15", "10-15"],
-              ["2", "18", "11", "10-15"],
-              ["3", "18", "11", "10-15"]
+              ["1", "37.5", "13", "10-15"],
+              ["2", "37.5", "10", "10-15"],
+              ["3", "37.5", "10", "10-15"]
             ]
-          }
+          },
+          {
+            title: "Leg Raises",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "7", "15", "10-15"],
+              ["2", "7", "10", "10-15"],
+              ["3", "7", "8", "10-15"]
+            ]
+          },
         ]
       },
       thursday: {
@@ -159,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
               ["1", "68", "10", "10-15"],
-              ["2", "68", "10", "10-15"]
+              ["2", "68", "10", "10-15"],
+              ["3", "68", "8", "10-15"]
             ]
           },
           {
@@ -170,83 +233,58 @@ document.addEventListener('DOMContentLoaded', () => {
               ["2", "18", "11", "10-15"],
               ["3", "18", "11", "10-15"]
             ]
-          }
+          },
+          {
+            title: "Lat Pulldown (Neutral)",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "85", "8", "6-10"],
+              ["2", "85", "7", "6-10"],
+            ]
+          },
+          {
+            title: "Rope Pullovers",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "30", "10", "6-10"],
+              ["2", "30", "9", "6-10"],
+              ["3", "30", "8", "6-10"],
+            ]
+          },
+          {
+            title: "Barbell Rows",
+            table: [
+              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
+              ["1", "60", "14", "10-15"],
+              ["2", "60", "13", "10-15"],
+            ]
+          },
         ]
       },
-      saterday: {
-        title: "Saterday's Workout",
+      saturday: {
+        title: "Saturday's my first restday",
         tables: [
           {
-            title: "Incline Machine Press",
+            title: "",
             table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "59", "7", "6-10"],
-              ["2", "59", "7", "6-10"],
+              [],
+              [],
+              [],
             ]
           },
-          {
-            title: "Incline Barbell Press",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "50", "7", "6-10"],
-              ["2", "50", "9", "6-10"]
-            ]
-          },
-          {
-            title: "Peck Deck Fly",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "68", "10", "10-15"],
-              ["2", "68", "10", "10-15"]
-            ]
-          },
-          {
-            title: "Incline Dumbell Curl",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "18", "15", "10-15"],
-              ["2", "18", "11", "10-15"],
-              ["3", "18", "11", "10-15"]
-            ]
-          }
         ]
       },
       sunday: {
-        title: "Sundays's Workout",
+        title: "Sunday's my first restday",
         tables: [
           {
-            title: "Incline Machine Press",
+            title: "",
             table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "59", "7", "6-10"],
-              ["2", "59", "7", "6-10"],
+              [],
+              [],
+              [],
             ]
           },
-          {
-            title: "Incline Barbell Press",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "50", "7", "6-10"],
-              ["2", "50", "9", "6-10"]
-            ]
-          },
-          {
-            title: "Peck Deck Fly",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "68", "10", "10-15"],
-              ["2", "68", "10", "10-15"]
-            ]
-          },
-          {
-            title: "Incline Dumbell Curl",
-            table: [
-              ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "18", "15", "10-15"],
-              ["2", "18", "11", "10-15"],
-              ["3", "18", "11", "10-15"]
-            ]
-          }
         ]
       },
     };
@@ -263,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contentTitle.textContent = data.title;
   
         // clears the current content
-        // data.tables loops trough each workout section and displays the right table
+        // data.tables loops trough each workout section and displays the right
         contentTable.innerHTML = data.tables
           .map(tableData => {
             const tableRows = tableData.table

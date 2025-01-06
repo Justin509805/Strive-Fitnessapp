@@ -868,6 +868,7 @@ header {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0; 
+  margin-bottom: 10px;
 }
 
 /* tbody is the whole table */
