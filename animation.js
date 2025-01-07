@@ -66,7 +66,7 @@ function updateRemainingCalories(current, total) {
   
 // first is the current second is total amount of calories
 // fill in your maintainance and eaten calories here
-updateRadialGraph(422, 2300);
+updateRadialGraph(1810, 2500);
 
   
 

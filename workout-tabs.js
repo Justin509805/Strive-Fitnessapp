@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
               ["1", "59", "7", "6-10"],
               ["2", "59", "7", "6-10"],
+              ["3", "59", "7", "6-10"],
             ]
           },
           {
