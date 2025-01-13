@@ -36,6 +36,7 @@
         </button>
     </header>
 
+    <!-- huge-container is the top container with a chevron-left, a data and a calendar icon and a chevron-right on the top which is inside the icon-and-title class -->
     <div class="huge-container">
       <div class="icon-and-title">
         <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +67,9 @@
           <path d="M9.5 18.847L15.5 12.847L9.5 6.84698" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
+      <!-- data is the container within the big container, data has a green background -->
       <div class="data">
+        <!-- inside data there are the calories left on the top-left, a radial graph of calories eaten on the top-middle and calories burnt on the top-right -->
         <div class="cal-container">
           <div class="cal-left-container">
             <div class="cal-left">
@@ -120,10 +123,17 @@
         </div>
 
         <div class="macros-parent">
+          <!-- macro-parent is the container around the carbs, proteins and fats -->
+           <!-- this places for example the word carbs, carbs eaten and max-carbs nest to each other  -->
           <div class="macros">
+              <!-- macros places all of the macro-items underneath each other so the word protein, protein eaten and max-protein under carbs  -->
             <div class="macro-item">
+              <!-- macro-item is the container around each individual macronutrient -->
                 Carbs
                 <div>
+                  <!-- <span> carbs, protein and fat are the amount of macros eaten -->
+                    <!-- <span> max-carbs, max-protein and max-fat are the maximum amount of each macronutrient that you can eat -->
+                      <!-- 0 will be changed dependant on the value that is in the JS / g showcases that the macros are in grams -->
                     <span id="carbs">0</span> / <span id="max-carbs">0</span>g
                 </div>
             </div>
