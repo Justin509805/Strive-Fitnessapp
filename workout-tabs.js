@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Incline Machine Press",
             table: [
               ["SET", "KG", "REPS", "OPTIMAL AMOUNT"],
-              ["1", "59", "7", "6-10"],
+              ["1", "59", "8", "6-10"],
               ["2", "59", "7", "6-10"],
               ["3", "59", "7", "6-10"],
             ]

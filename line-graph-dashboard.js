@@ -61,5 +61,5 @@ function updateLineGraph(dataPoints) {
 
 // calls the function
 // insert weight here
-updateLineGraph([70, 72, 74.5, 72.5, 75, 80, 70, 72.5]);
+updateLineGraph([70, 72, 74.5, 72.5, 75, 80, 75]);
 

@@ -32,25 +32,35 @@
             <path d="M6.33151 18.2076L4.92151 19.6176" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M19.0615 5.47766L17.6515 6.88766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-
         </button>
     
       </header>
 
-      <section class="dashboard">
+      <section class="dashboard"> 
+        <!-- dashboard is the container around the title and the four top containers, water, sleep, calories and steps -->
+         <!-- title is the "todays dashboard text" above the top four containers -->
         <div class="title"><p>Todays Dashboard</p></div>
 
+        <!-- flex-container is the container around the four top containers, water, sleep, calories and steps, without with the title! -->
         <div class="flex-container">
+          <!-- containers-left and containers-right are the two containers on the left (water and steps) and two on the right (sleep and calories) -->
           <div class="containers-left">
+            <!-- square-container are the containers with a square shape (water and steps) that are both located at the left -->
             <div class="square-container">
+              <!-- icon-and-title are the icon and title at the top within each container including a <svg> and a <p> element -->
               <div class="icon-and-title">
                 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.86552 14.7875C7.11979 14.7875 8.32268 14.2611 9.20959 13.324C10.0965 12.3868 10.5947 11.1158 10.5947 9.79056C10.5947 8.36285 9.91914 7.00653 8.56793 5.86436C7.21673 4.72219 6.20332 3.00894 5.86552 1.2243C5.52772 3.00894 4.51431 4.72219 3.16311 5.86436C1.8119 7.00653 1.1363 8.36285 1.1363 9.79056C1.1363 11.1158 1.63455 12.3868 2.52146 13.324C3.40836 14.2611 4.61125 14.7875 5.86552 14.7875Z" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <p>Water</p>
               </div>
+              <!-- data is the green box within each container containing either a white graph or white text -->
               <div class="data">
+                <!-- graph is the container around the white graph within the water container -->
                 <div class="graph">
+                  <!-- big-line and small-line are the white big and small lines on the left side of the graph, created with a <svg> -->
+                   <!-- dotted-line is the white dotted line at the right side of the graph, created with a <p>-->
+                    <!-- number is the white value underneath the white graph still within the green data container -->
                   <div class="big-line">
                     <svg width="4" height="61" viewBox="0 0 4 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2.17458 1.94525L2.17458 58.7089" stroke="white" stroke-width="3" stroke-linecap="round"/>
