@@ -941,14 +941,30 @@ header {
 .long-container-weight-tracker {
   margin-top: 20px;
   width: 315px;
-  height: 265px;
+  height: 280px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
 }
 
 .long-container-weight-tracker .data {
   width: 300px;
-  height: 215px;
+  height: 230px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+.long-container-body-bmi {
+  margin-top: 20px;
+  width: 315px;
+  height: 130px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+}
+
+.long-container-body-bmi .data {
+  width: 300px;
+  height: 80px;
   margin-left: 7px;
   background-color: var(--primary-color);
   border-radius: var(--container-border-radius);
@@ -998,6 +1014,39 @@ header {
   font-family: "PP Monument Extended", sans-serif;
   fill: white; 
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.weight-progress {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  font-family: "PP Monument Extended";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.weight-progress p {
+  margin: 10px 0px 0px 0px;
+}
+
+.weight-calculation p {
+  margin-top: 5px;
+}
+
+.weight-calculation {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  gap: 5px;
+  color: #FFF;
+  font-family: "PP Agrandir";
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
