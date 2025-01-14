@@ -7,17 +7,30 @@
     <title>Strive</title>
     <script src="darkmode.js" defer></script>
 </head>
-<!-- "dark-mode" gets added and removed based on which theme is active-->
+<!-- "dark-mode" gets added and removed to the <body> based on which theme is active -->
 <body>
-  <!-- "date-and-greeting is the container around the two with the "date"and "greeting" 
-   being the child elements with white text inside and underneath each other -->
-   <!-- "greeting" is on index a greeting and on the other pages the title-->
+<!-- The "date-and-greeting" div acts as a container for the "date" and "greeting" elements.
+     - It ensures proper alignment and spacing of the two child elements ("date" and "greeting").
+     - Both child elements are vertically stacked.
+     - This text adapts for light and darkmode by changeing the text color between white and black -->
+
+<!-- The "date" element:
+     - Displays a date on the index/dashboard page (e.g., "Mon, Dec 9").
+     - Serves as a line of motivation on other pages (e.g., "You have been very consistent!").
+     - This text adapts for light and darkmode by changeing the text color between white and black -->
+
+<!-- The "greeting" element:
+     - Displays a greeting on the index/dashboard page (e.g., "Hello, Name").
+     - Serves as a title or heading on other pages (e.g., "Calorie Tracker" or "Profile").
+     - This text adapts for light and darkmode by changeing the text color between white and black -->
     <header>
         <div class="date-and-greeting">
           <p class="date">You are doing amazing!</p>
           <p class="greeting">Weight Tracker</p>
         </div>
-        <!-- "theme-switch" is the green switch with one white icon displayed and the other not-->
+        
+<!-- The "theme-switch" element:
+     - Displays a green switch with either a white sun or a moon svg on the top right of every page. -->
         <button id="theme-switch">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.9915 3.70062C10.798 4.8941 10.1276 6.5128 10.1276 8.20062C10.1276 9.88845 10.798 11.5071 11.9915 12.7006C13.185 13.8941 14.8037 14.5646 16.4915 14.5646C18.1793 14.5646 19.798 13.8941 20.9915 12.7006C20.9915 14.4807 20.4637 16.2207 19.4747 17.7008C18.4858 19.1808 17.0802 20.3344 15.4357 21.0155C13.7911 21.6967 11.9815 21.875 10.2357 21.5277C8.48988 21.1804 6.88623 20.3233 5.62756 19.0646C4.36889 17.8059 3.51172 16.2023 3.16445 14.4564C2.81719 12.7106 2.99542 10.901 3.6766 9.25647C4.35779 7.61194 5.51135 6.20633 6.99139 5.2174C8.47143 4.22846 10.2115 3.70062 11.9915 3.70062Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -37,7 +50,15 @@
         </button>
     </header>
 
+<!-- The "long-container-weight-tracker" element:
+     - Displays a container with rounded corners, a border and a linegraph.     
+    - This border and background adapts for light and darkmode by changeing the text color between white and black -->
     <div class="long-container-weight-tracker">
+
+<!-- The "icon-and-title" element:
+     - Displays an icon and title on almost every container (e.g., "*water drop icon* Water").
+     - Serves as a title above every container with data (e.g., "Water", "BMI" or "Calories").
+     - This text and icon adapts for light and darkmode by changeing the text color between white and black -->
       <div class="icon-and-title">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_63_1373)">
@@ -55,24 +76,26 @@
         </svg>
         <p>Graph</p>
       </div>
+<!-- The "data" element:
+     - Displays a green container with rounded corners and a margin around with data inside -->
       <div class="data"> 
+<!-- The "line-graph-container-weight-tracker" element:
+     - Container around the "line-graph", "graph", "graphpoints" and "grid-lines".
+     - It showcases a white linear graph with rounded points -->
         <div class="line-graph-container-weight-tracker">
           <svg class="line-graph" viewBox="0 0 500 215" preserveAspectRatio="none">
-            <!-- Grid Lines -->
             <g class="grid-lines">
-              <!-- Horizontal grid lines -->
+              <!-- "grid-lines" are the horizontal lines (e.g., "78 ---------------"). -->
               <line x1="0" y1="43" x2="500" y2="43"></line>
               <line x1="0" y1="86" x2="500" y2="86"></line>
               <line x1="0" y1="129" x2="500" y2="129"></line>
               <line x1="0" y1="172" x2="500" y2="172"></line>
             </g>
       
-            <!-- Graph Content -->
             <g class="graph">
-              <!-- The dynamic path for the graph line -->
+              <!-- rounded path between points -->
               <path d="M50,172 C150,86 250,129 450,43" class="graph-line"></path>
               
-              <!-- The dynamic circles for data points -->
               <g class="graph-points">
                 <circle cx="50" cy="172" r="6"></circle>
                 <circle cx="150" cy="86" r="6"></circle>
@@ -81,15 +104,15 @@
               </g>
             </g>
             
-            <!-- Labels -->
+            <!-- "labels" are the labels on the left of the horizontal lines (e.g., "78 ---------------"). 
+                  - Displays a white line with a 0.5 opacity on a green background -->
             <g class="labels">
-              <!-- Y-axis labels -->
               <text x="10" y="47">83</text>
               <text x="10" y="90">78</text>
               <text x="10" y="133">73</text>
               <text x="10" y="176">68</text>
               
-              <!-- Bottom-left and bottom-right labels -->
+              <!-- begin and current date on the bottom-left and right displayed with white text -->
               <text x="10" y="210">16 Sept 2024</text>
               <text x="490" y="210" text-anchor="end">Today</text>
             </g>
