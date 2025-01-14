@@ -932,5 +932,73 @@ header {
   transform: scaleY(1.1);
 }
 
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* -------------------------Weight tracker page ---------------------*/
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
 
+.long-container-weight-tracker {
+  margin-top: 20px;
+  width: 315px;
+  height: 265px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+}
 
+.long-container-weight-tracker .data {
+  width: 300px;
+  height: 215px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+.line-graph-container-weight-tracker {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.line-graph-container-weight-tracker .line-graph {
+  width: 100%;
+  height: 160px;
+  padding: 0px 15px 0px 15px;
+  border-radius: var(--container-border-radius);
+}
+
+.line-graph-container-weight-tracker .grid-lines {
+  display: flex;
+  justify-content: center;
+}
+
+.line-graph-container-weight-tracker .grid-lines line {
+  stroke: white;
+  stroke-width: 1;
+  opacity: 0.5; 
+}
+
+.line-graph-container-weight-tracker .graph-line {
+  fill: none;
+  stroke: white;
+  stroke-width: 8;
+  stroke-linecap: round;
+  filter: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.3)); 
+}
+
+.line-graph-container-weight-tracker .graph-points circle {
+  fill: #A6D7A8;
+  stroke: white;
+  stroke-width: 4;
+}
+
+.line-graph-container-weight-tracker .labels text {
+  font-family: "PP Monument Extended", sans-serif;
+  fill: white; 
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
