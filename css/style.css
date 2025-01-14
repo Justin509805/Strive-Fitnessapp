@@ -1055,7 +1055,7 @@ header {
 .long-container-body-bmi {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 }
 
 .data {
