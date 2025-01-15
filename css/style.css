@@ -1135,6 +1135,7 @@ header {
 .bmi-section {
   flex: 1;
   height: 100%;
+  
 }
 
 .underweight {
@@ -1167,11 +1168,12 @@ header {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-bottom: 30px;
 }
 
 .arrow {
   position: absolute;
-  top: -15px;
+  top: 25px;
   /* left = how far on the scale */
   left: 95px; 
   width: 0;
@@ -1180,18 +1182,6 @@ header {
   border-right: 5px solid transparent;
   border-bottom: 10px solid #ffffff;
   transform: rotate(180deg);
-}
-
-.arrow-label {
-  position: absolute;
-  top: -30px;
-  left: 83px;   
-  color: #FFF;
-  font-family: "PP Agrandir";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .bmi {
@@ -1203,8 +1193,9 @@ header {
 .value {
   color: #FFF;
   font-family: "PP Monument Extended";
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
 }
