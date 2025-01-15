@@ -131,9 +131,19 @@
         <div class="icon-and-title">
           <p>Body Composition</p>
         </div>
+      <!-- The "data" element:
+        - Displays a green container with rounded corners and a margin around with data inside -->
         <div class="data">
-          <!-- Radial Graph -->
+          <!-- "radial graph" is the radial graph with 3 segments devided evenly with 3 different tints of green -->
           <div class="radial-graph"></div>
+          <!-- "segments" is the container around each dot and text 
+                - segments has a flex direction column applied so it puts all if the dots and text underneath eachother 
+                (e.g., "O 14% BODYFAT"     )
+                       "O 35kg MUSCLE MASS") -->
+           
+        <!-- "dot-text" has a flex applied to it so it puts each dot and text next to eachother with a gap 
+            (e.g., "O 14% BODYFAT") 
+            ("dot1, 2 and 3" are the individual green dots) -->
           <div class="segments">
             <div class="dot-text">
               <div class="dot1"></div>
@@ -161,9 +171,18 @@
         <div class="icon-and-title">
           <p>BMI</p>
         </div>
+        <!-- The "data" element:
+           - Displays a green container with rounded corners and a margin around with data inside -->
         <div class="data bmi">
           <div class="bmi-scale-container">
             <div class="value">23.6</div>
+            <!-- "bmi-scale" is the container around each bmi section 
+             - Contains from left to right a bar with the colors:
+                    - Blue for underweight 
+                    - Green for normal 
+                    - Yellow for overweight 
+                    - Orange for obese 
+                    - Red for extremely obese -->
             <div class="bmi-scale">
               <div class="bmi-section underweight"></div>
               <div class="bmi-section normal"></div>
@@ -171,7 +190,12 @@
               <div class="bmi-section obese"></div>
               <div class="bmi-section extremely-obese"></div>
             </div>
+
+            <!-- "arrow" is the white arrow showing where you are on the scale -->
             <div class="arrow"></div>
+
+          <!-- "bmi-labels" is the container underneath the bmi bar 
+             - Labels which value is for which colors (e.g., Blue 15-18.5 or Green 18.5-25) -->
             <div class="bmi-labels">
               <span>15</span>
               <span>18.5</span>
