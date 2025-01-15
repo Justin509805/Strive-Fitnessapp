@@ -132,16 +132,23 @@
           <p>Body Composition</p>
         </div>
         <div class="data">
-          <svg class="body-comp-graph" viewBox="0 0 150 150">
-            <!-- Background Circle -->
-            <circle class="background-circle" cx="50" cy="50" r="45"></circle>
-      
-            <!-- Segments -->
-            <circle class="segment segment-1" cx="50" cy="50" r="45"></circle>
-            <circle class="segment segment-2" cx="50" cy="50" r="45"></circle>
-            <circle class="segment segment-3" cx="50" cy="50" r="45"></circle>
-      
-          </svg>
+          <!-- Radial Graph -->
+          <div class="radial-graph"></div>
+          <div class="segments">
+            <div class="dot-text">
+              <div class="dot1"></div>
+              <div>14% BODYFAT</div>
+            </div>
+            <div class="dot-text">
+              <div class="dot2"></div>
+              <div>35kg MUSCLE MASS</div>
+            </div>
+          <div class="dot-text">
+            <div class="dot3"></div>
+            <div>40kg FAT FREE MASS</div>
+          </div>
+
+          </div>
         </div>
       </div>
       
@@ -154,7 +161,7 @@
         <div class="icon-and-title">
           <p>BMI</p>
         </div>
-        <div class="data"> 
+        <div class="data bmi-data"> 
         </div>
       </div>
       
@@ -244,6 +251,5 @@
     </nav>
 
     <script src="line-graph-dashboard.js"></script>
-    <script src="body-comp-graph.js"></script>
 </body>
 </html>
