@@ -1298,3 +1298,32 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+
+.long-container-streak-memories {
+  margin-top: 10px;
+  width: 255px;
+  height: 147px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
+}
+
+.long-container-streak-memories .icon-and-title svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.long-container-streak-memories .data {
+  width: 241px;
+  height: 99px;
+  margin-left: 7px;
+  background-color: var(--primary-color);
+  border-radius: var(--container-border-radius);
+}
+
+.parent-streak-memories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
