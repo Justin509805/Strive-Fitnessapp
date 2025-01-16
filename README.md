@@ -28,6 +28,7 @@ The website is built with HTML, CSS and JS.
 - A mobile device (iOS or Android).
 - A browser that can load HTML, CSS and JS pages. 
 - Internet connection.  
+- View app in 375x815!
 
 ### Steps to Clone the Repository:
 
