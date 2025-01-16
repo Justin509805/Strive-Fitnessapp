@@ -49,7 +49,11 @@
         </button>
     </header>
 
-    <div class="long-container-profile">
+<!-- "long-container-profile" is the whole container around all of the content on the profile page:
+     - It holds all the major sections, including the profile details, progress bar, levels, and streak/memories containers.
+     - Serves as the main layout structure for the profile page, ensuring proper spacing and organization.
+     - Adapts to light and dark mode by adjusting text and background colors. -->
+     <div class="long-container-profile">
       <div class="profile-section"><img src="img/MYSELF.jpg" alt="pfp">
       <div class="profile-name"><p>Justin Veenhuis</p></div>
         <div class="rank-and-streak"><p>
@@ -81,6 +85,7 @@
           <!-- The "data" element:
                 - Displays a green container with rounded corners and a margin around with data inside -->              
           <div class="data"> 
+            <!-- "weekdays" is the container around the white M T W T F S S -->
             <div class="weekdays">
               <p>M</p>
               <p>T</p>
@@ -90,6 +95,10 @@
               <p>S</p>
               <p>S</p>
             </div>
+            <!-- "stamps" is the container around all the stamp slots 
+                - Contains "stamps-filled" (has a white bicep icon and another green cicrle inside).
+                - Contains "stamps-empty" (just a green circle.)      
+                - Adapts to light and dark mode by adjusting text and background colors. -->
             <div class="stamps">
               <div class="stamp-filled">
                 <div class="middle-circle">
@@ -111,7 +120,7 @@
               <div class="stamp-empty"></div>
               <div class="stamp-empty"></div>
             </div>
-
+            <!-- "streak-words"is the container around the amount of streak days and some words of motivation (e.g., 3days Good Job!) -->
             <div class="streak-words">
               <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> 3 days</p>
               <p>Good Job!</p>
@@ -127,11 +136,19 @@
                 - This text and icon adapts for light and darkmode by changeing the text color between white and black -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-heart"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg>            <p>Memories</p>
           </div>
-          <!-- The "data" element:
-                - Displays a green container with rounded corners and a margin around with data inside -->              
+<!-- The "data" element:
+        - Displays a green container with rounded corners and a margin around with data inside -->              
           <div class="data"> 
+<!--  The "all-memories" element:
+                - is the container around all of the memorie slots -->
             <div class="all-memories">
+
+<!--  The "top-row" serves as the container of the top-row
+        while bottom-row serves as the container of the bottom-row -->
               <div class="top-row">
+                <!-- "memory" are the green containers with a white border and rounded corners
+                 - Inside each memory slot there is a <p> that displays the date number in white 
+                  - Adapts to light and dark mode by adjusting text and background colors. -->
                 <div class="memory">
                   <p>8</p>
                 </div>
