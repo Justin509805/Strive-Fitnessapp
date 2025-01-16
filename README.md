@@ -3,6 +3,8 @@
 Welcome to **Strive**!  
 This website is designed to help you achieve your fitness goals by track progress in weight, workouts and diet. Stay motivated with gamification elelemnts on your journey to a healthier you. 🚀
 
+This project is not responsive however! Please view the app in 375x815.
+
 ---
 
 ## 🌟 Features
