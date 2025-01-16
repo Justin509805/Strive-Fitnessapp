@@ -37,7 +37,7 @@ body {
     --secondary-color: #A6D7A8; /* secondary for light mode */
     --background-color: #F4F4F4; /* bg color for light mode */
     --text-color: #000000; /* lightmode text color */
-    --container-color: #FFFFFF; /* border color lightmode*/
+    --container-color: #FFFFFF; /* color lightmode*/
     --border-color: #E0E0E0; /* border color lightmode*/
 
     /* font Family */
@@ -199,6 +199,7 @@ header {
   height: 165px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 }
 
 .long-container {
@@ -207,6 +208,7 @@ header {
   height: 165px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 }
 
 .big-container {
@@ -214,6 +216,7 @@ header {
   height: 243px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 }
 
 .containers-right .square-container {
@@ -229,6 +232,7 @@ header {
   height: 88px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 
 }
 
@@ -557,6 +561,7 @@ header {
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
   margin-top: 20px;
+  background-color: var(--container-color);
 }
 
 .huge-container .data {
@@ -946,6 +951,7 @@ header {
   height: 280px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 }
 
 .long-container-weight-tracker .data {
@@ -962,6 +968,7 @@ header {
   height: 130px;
   border: 2px solid var(--border-color);
   border-radius: var(--container-border-radius);
+  background-color: var(--container-color);
 }
 
 .long-container-body-bmi .data {
@@ -1129,7 +1136,7 @@ header {
   height: 12px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .bmi-section {
