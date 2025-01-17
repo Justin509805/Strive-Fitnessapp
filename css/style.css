@@ -945,6 +945,7 @@ header {
 /* ----------------------------------------------------------------- */
 /* ----------------------------------------------------------------- */
 
+/* container of the line graph */
 .long-container-weight-tracker {
   margin-top: 20px;
   width: 315px;
@@ -954,6 +955,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* green box inside line graph container */
 .long-container-weight-tracker .data {
   width: 300px;
   height: 230px;
@@ -962,6 +964,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* containers for body comp and bmi */
 .long-container-body-bmi {
   margin-top: 10px;
   width: 315px;
@@ -971,6 +974,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* green box inside body comp and bmi container */
 .long-container-body-bmi .data {
   width: 300px;
   height: 80px;
@@ -979,6 +983,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* container around the linegraph itself inside the data */
 .line-graph-container-weight-tracker {
   display: flex;
   justify-content: center;
@@ -987,6 +992,7 @@ header {
   position: relative;
 }
 
+/* line itself */
 .line-graph-container-weight-tracker .line-graph {
   width: 100%;
   height: 160px;
@@ -994,11 +1000,13 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* gridlines container behind the line-graph */
 .line-graph-container-weight-tracker .grid-lines {
   display: flex;
   justify-content: center;
 }
 
+/* line itself of the gridlines */
 .line-graph-container-weight-tracker .grid-lines line {
   stroke: white;
   stroke-width: 1;
@@ -1013,12 +1021,14 @@ header {
   filter: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.3)); 
 }
 
+/* circle on measures */
 .line-graph-container-weight-tracker .graph-points circle {
   fill: #A6D7A8;
   stroke: white;
   stroke-width: 4;
 }
 
+/* text underneath displaying first and last date of measuring */
 .line-graph-container-weight-tracker .labels text {
   font-family: "PP Monument Extended", sans-serif;
   fill: white; 
@@ -1028,6 +1038,7 @@ header {
   line-height: normal;
 }
 
+/* how much you weight right now */
 .weight-progress {
   width: 300px;
   display: flex;
@@ -1044,10 +1055,12 @@ header {
   margin: 10px 0px 0px 0px;
 }
 
+/* how much you have gained */
 .weight-calculation p {
   margin-top: 5px;
 }
 
+/* how much you have gained */
 .weight-calculation {
   display: flex;
   width: 300px;
@@ -1067,12 +1080,14 @@ header {
 
 }
 
+/* green box inside body comp and bmi containers */
 .long-container-body-bmi .data {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+/* radial graph in body comp section */
 .long-container-body-bmi .radial-graph {
   margin-right: 25px;
   width: 60px;
@@ -1085,12 +1100,14 @@ header {
   );
 }
 
+/* segments of each color on the radial graph */
 .segments {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
+/* dots and text next to the radial graph */
 .dot-text {
   display: flex;
   align-items: center;
@@ -1102,6 +1119,8 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+
+/* dot 1-2 and 3 */
 .dot1 {
   width: 15px;
   height: 15px;
@@ -1123,6 +1142,7 @@ header {
   background-color: #c8e6c9;
 }
 
+/* container of the cooloured scale on the bmi section */
 .bmi-scale-container {
   position: relative;
   margin-top: 40px;
@@ -1130,6 +1150,7 @@ header {
   margin: 35px 10px 0px 10px
 }
 
+/* bmi scale itself */
 .bmi-scale {
   display: flex;
   width: 100%;
@@ -1144,27 +1165,28 @@ header {
   height: 100%;
   
 }
-
+/* each color of the bmi scale */
 .underweight {
-  background-color: #42a5f5; /* Blue */
+  background-color: #42a5f5; 
 }
 
 .normal {
-  background-color: #66bb6a; /* Green */
+  background-color: #66bb6a; 
 }
 
 .overweight {
-  background-color: #fbc02d; /* Yellow */
+  background-color: #fbc02d; 
 }
 
 .obese {
-  background-color: #ffa726; /* Orange */
+  background-color: #ffa726; 
 }
 
 .extremely-obese {
-  background-color: #ef5350; /* Red */
+  background-color: #ef5350; 
 }
 
+/* numbers underneath bmi scale */
 .bmi-labels {
   display: flex;
   justify-content: space-between;
@@ -1178,6 +1200,7 @@ header {
   margin-bottom: 30px;
 }
 
+/* arrow above scale showing where you are */
 .arrow {
   position: absolute;
   top: 25px;
@@ -1197,6 +1220,7 @@ header {
   height: 80px;
 }
 
+/* how much your value of the bmi is */
 .value {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -1213,6 +1237,7 @@ header {
 /* ----------------------------------------------------------------- */
 /* ----------------------------------------------------------------- */
 
+/* container wrapping all of the profile content */
 .long-container-profile {
   margin-top: 20px;
   width: 315px;
@@ -1221,6 +1246,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* profile picture, name, rank, streak container */
 .profile-section {
   display: flex;
   align-items: center;
@@ -1229,6 +1255,7 @@ header {
   height: 180px;
 }
 
+/* badge and icon svg */
 .rank-and-streak svg {
   color: var(--text-color);
   width: 13px;
@@ -1236,6 +1263,7 @@ header {
   margin: 0px 4px 0px 4px;
 }
 
+/* username */
 .profile-name p {
   margin-bottom: 0px;
   color: var(--text-color);
@@ -1246,6 +1274,7 @@ header {
   line-height: normal;
 }
 
+/* text of which rank and streak you have/are */
 .rank-and-streak p {
   margin: 2px 0px 0px 0px;
   color: var(--text-color);
@@ -1259,12 +1288,14 @@ header {
   justify-content: center;
 }
 
+/* profile picture */
 .profile-section img {
   border-radius: 50%;
   width: 90px;
   height: auto;
 }
 
+/* progressbar section */
 .progress-bar-section {
   display: flex;
   justify-content: center;
@@ -1299,6 +1330,7 @@ header {
   line-height: normal;
 }
 
+/* container of streaks and memories */
 .long-container-streak-memories {
   margin-top: 10px;
   width: 255px;
@@ -1308,12 +1340,14 @@ header {
   background-color: var(--container-color);
 }
 
+/* icon and title of the streaks and memories */
 .long-container-streak-memories .icon-and-title svg {
   width: 20px;
   height: 20px;
   margin-right: 2px;
 }
 
+/* green box inside the memories and streak sections */
 .long-container-streak-memories .data {
   width: 241px;
   height: 99px;
@@ -1328,6 +1362,7 @@ header {
   align-items: center;
 }
 
+/* M T W T F S S inside streaks container */
 .weekdays {
   display: flex;
   justify-content: space-evenly;
@@ -1343,12 +1378,14 @@ header {
   margin: 10px 7px 5px 3px
 }
 
+/* container around stamps */
 .stamps {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5px;
 }
 
+/* the stamps with in icon iside where you have logged in */
 .stamp-filled {
   display: flex;
   align-items: center;
@@ -1376,6 +1413,7 @@ header {
   color: white;
 }
 
+/* stamp slots where you have not logged in */
 .stamp-empty {
   width: 28px;
   height: 28px;
@@ -1383,6 +1421,7 @@ header {
   background-color: var(--secondary-color);
 }
 
+/* streak and words of motivation underneath stamps */
 .streak-words {
   display: flex;
   justify-content: space-between;
@@ -1407,6 +1446,7 @@ header {
   margin-right: 2px;
 }
 
+/* container of each memorie slot */
 .memory {
   display: flex;
   align-items: center;
@@ -1419,6 +1459,7 @@ header {
   margin: 1px;
 }
 
+/* number of the date inside */
 .memory p {
   color: #FFF;
   font-family: "PP Agrandir";
@@ -1428,6 +1469,7 @@ header {
   line-height: normal;
 }
 
+/* container around all memorie slots */
 .all-memories {
   height: 99px;
   display: flex;
@@ -1435,6 +1477,7 @@ header {
   justify-content: center;
 }
 
+/* top row and bottom row inside all-memories */
 .top-row, .bottom-row {
   display: flex;
   justify-content: center;
