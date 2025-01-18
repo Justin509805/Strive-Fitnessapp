@@ -194,6 +194,7 @@ header {
   line-height: normal;
 }
 
+/* containers with a square shape, water and steps */
 .square-container {
   width: 150px;
   height: 165px;
@@ -202,6 +203,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* tall containers (calories) */
 .long-container {
   margin-top: 10px;
   width: 315px;
@@ -211,6 +213,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* wide containers (weight) */
 .big-container {
   width: 150px;
   height: 243px;
@@ -219,6 +222,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* containers located on the right */
 .containers-right .square-container {
   width: 150px;
   height: 160px;
@@ -227,6 +231,7 @@ header {
   margin-top: 18px;
 }
 
+/* small container (sleep) */
 .small-container {
   width: 150px;
   height: 88px;
@@ -236,6 +241,7 @@ header {
 
 }
 
+/* green box inside square containers (water and steps) */
 .square-container .data {
   width: 135px;
   height: 115px;
@@ -244,6 +250,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* green box inside calorie container */
 .long-container .data {
   width: 300px;
   height: 115px;
@@ -252,6 +259,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* greenbox in weight container */
 .big-container .data {
   display: flex;
   align-items: center;
@@ -263,6 +271,7 @@ header {
 }
 
 
+/* green box inside sleep container */
 .small-container .data {
   width: 135px;
   height: 40px;
@@ -273,6 +282,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* icon and title on every container on every page */
 .icon-and-title {
   margin: 8px 0px 8px 10px;
   display: flex;
@@ -280,10 +290,12 @@ header {
   color: var(--text-color)
 }
 
+/* svg inside of the icon and title */
 .icon-and-title svg {
   stroke: var(--text-color)
 }
 
+/* text inside of icon and title */
 .icon-and-title p {
   font-family: "PP Agrandir";
   margin: 0px 0px 0px 5px;
@@ -292,6 +304,7 @@ header {
   font-weight: 100;
 }
 
+/* line graph inside water container */
 .square-container .graph {
   display: flex;
   align-items: center;
@@ -301,6 +314,7 @@ header {
   margin: 6px 0px 0px 0px
 }
 
+/* line graph in the steps container */
 .square-container .graph-steps {
   display: flex;
   justify-content: center;
@@ -315,10 +329,12 @@ header {
   transform: scaleY(1.2);
 }
 
+
 .small-container .graph {
   margin: 6px 0px 3px 6px
 }
 
+/* dotted line in the water container inside data */
 .dotted-line p {
   color: #FFF;
   font-family: "PP Agrandir";
@@ -329,6 +345,7 @@ header {
   margin-bottom: 40px;
 }
 
+/* dotted line in the steps container inside data */
 .dotted-line-steps p {
   color: #FFF;
   font-family: "PP Agrandir";
@@ -339,7 +356,7 @@ header {
   margin: 0px;
 }
 
-
+/* white value at the bottom of each green box (e.g, 7.235/10K or 3/8L)*/
 .data .number p {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -350,6 +367,7 @@ header {
   margin: 0px 0px 10px 12px;
 }
 
+/* 7.235/10k inside steps container */
 .data .number-steps p {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -360,6 +378,7 @@ header {
   margin: 0px 0px 4px 10px;
 }
 
+/* container inside the weight container */
 .line-graph-container {
   position: absolute;
 }
@@ -369,7 +388,7 @@ header {
   right: 10px;
 }
 
-
+/* 8.5H/8 inside sleep container */
 .small-container .data .number p {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -380,11 +399,13 @@ header {
   margin: 0px 0px 3px 5px;
 }
 
+/* green box inside of all containers */
 .data {
   display: flex;
   flex-direction: column;
 }
 
+/* all containers on the left side */
 .containers-left {
   display: flex;
   flex-direction: column;
@@ -392,6 +413,7 @@ header {
   width: 40vw;
 }
 
+/* all containers on the right side */
 .containers-right {
   display: grid;
   grid-template-columns: 1fr;
@@ -400,11 +422,13 @@ header {
   width: 40vw;
 }
 
+/* flex inside calorie container */
 .flex-container {
   display: flex;
   gap: 15px;
 }
 
+/* radial graph inside calorie container */
 .radial-graph {
   position: relative;
   width: 90px;
@@ -412,17 +436,20 @@ header {
   margin: 10px 18px;;
 }
 
+/* radial graph circle */
 .circle {
   width: 100%;
   height: 100%;
 }
 
+/* bg of the radial graph */
 .circle-bg {
   fill: none;
   stroke: var(--secondary-color);
   stroke-width: 4.5;
 }
 
+/* progress of the radial graph */
 .circle-progress {
   fill: none;
   stroke: white;
@@ -432,6 +459,7 @@ header {
   transition: stroke-dashoffset 0.35s ease;
 }
 
+/* text in the center of the radual graph */
 .text {
   position: absolute;
   top: 50%;
@@ -440,6 +468,7 @@ header {
   text-align: center;
 }
 
+/* value in the center of the radial graph */
 .number {
   font-size: 1.5rem;
   color: white;
@@ -450,6 +479,7 @@ header {
   line-height: normal;
 }
 
+/* "carbs protein and fat" itself */
 .unit {
   color: var(--secondary-color);
   font-family: "PP Monument Extended";
@@ -459,6 +489,7 @@ header {
   line-height: normal;
 }
 
+/* container around "carbs protein and fat" */
 .macros {
   text-align: left;
   font-size: 1rem;
@@ -484,6 +515,7 @@ header {
   gap: 2px; 
 }
 
+/* max-carbs max protein and max fats */
 #max-carbs,#max-fat,#max-protein, #carbs, #fat, #protein {
   color: #FFF;
   font-family: "PP Monument Extended";
@@ -497,6 +529,7 @@ header {
     font-size: 10px;
   }
 
+  /* container of the line graph */
   .line-graph-container {
     display: flex;
     justify-content: center;
@@ -512,6 +545,7 @@ header {
     border-radius: var(--container-border-radius);
 }
 
+/* grid lines on the weight container */
 .grid-lines {
     display: flex;
     justify-content: center;
@@ -523,6 +557,7 @@ header {
     opacity: 0.5; 
 }
 
+/* weight line */
 .graph-line {
     fill: none;
     stroke: white;
@@ -531,12 +566,14 @@ header {
     filter: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.3)); 
 }
 
+/* bulletpoints on weight container */
 .graph-points circle {
     fill: #A6D7A8;
     stroke: white;
     stroke-width: 5;
 }
 
+/* numbers on the gridlines */
 .labels text {
     font-family: "PP Monument Extended", sans-serif;
     fill: white; 
@@ -553,6 +590,7 @@ header {
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 
+/* container of the calories, burnt, left and amount of macros eaten */
 .huge-container {
   display: flex;
   flex-direction: column;
@@ -564,6 +602,7 @@ header {
   background-color: var(--container-color);
 }
 
+/* green box inide the calories container */
 .huge-container .data {
   width: 300px;
   height: 301px;
@@ -572,6 +611,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* date, calendar icon and chevrons */
 .huge-container .icon-and-title {
   display: flex;
   justify-content: space-between;
@@ -583,6 +623,7 @@ header {
   width: 18px;
 }
 
+/* container around cal burnt and left */
 .huge-container .cal-left, .cal-burnt {
   display: flex;
   align-items: center;
@@ -622,18 +663,21 @@ header {
   height: auto;
 }
 
+/* calories burnt container */
 .cal-burnt-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* calories left container */
 .cal-left-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* number of the calories left */
 .cal-left-number {
   display: flex;
   flex-direction: column;
@@ -649,6 +693,7 @@ header {
   line-height: normal;
 }
 
+/* container around the line between calories left burnt eaten and macros */
 .eaten-hr {
   display: flex;
   align-items: center;
@@ -661,10 +706,12 @@ header {
   margin: 0px 0px 13px 17px;
 }
 
+/* "eaten"n */
 .eaten-hr p {
   margin-right: 10px;
 }
 
+/* line between calories left burnt eaten and macros */
 .eaten-hr .hr {
   height: 1px;
   width: 210px;
@@ -696,6 +743,7 @@ header {
   margin-top: 5px;
 }
 
+/* container around breakfast lunch and dinner */
 .breakfast-lunch-dinner {
   color: #FFF;
   margin-top: 10px;
@@ -705,6 +753,7 @@ header {
   border-radius: var(--container-border-radius);
 }
 
+/* "breakfast" "lunch" "dinner" */
 .breakfast .title {
   color: #FFF;
   font-family: "PP Agrandir";
@@ -714,6 +763,7 @@ header {
   line-height: normal;
 }
 
+/* chevron right on the right of breakfast lunch and dinner */
 .breakfast .chevron {
   margin-left: 100px;
 }
@@ -734,6 +784,7 @@ header {
   line-height: normal;
 }
 
+/* breakfast lunch and dinner calorie amount */
 .kcal-calories .kcal {
   color: rgba(255, 253, 253, 0.51);
   font-family: "PP Monument Extended";
@@ -743,6 +794,7 @@ header {
   line-height: normal;
 }
 
+/* "kcal" inside breakfast lunch and dinner */
 .breakfast p {
   margin: 0px;
   color: #FFF;
@@ -757,12 +809,14 @@ header {
   margin-right: 10px;
 }
 
+/* container around breakfast */
 .breakfast {
   display: flex;
   align-items: center;
   padding: 15px 0px 8px 25px;
 }
 
+/* white line between breakfast lunch and dinner */
 .breakfast-lunch-dinner .hr {
   height: 1px;
   width: 255px;
